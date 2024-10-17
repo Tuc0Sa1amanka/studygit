@@ -13,7 +13,7 @@ void input(int** t, size_t m, size_t n)
   }
 }
 
-void output(const int * const * t, size_t m, size_t n)
+void out(const int * const * t, size_t m, size_t n)
 {
   for (size_t i = 0; i < m; ++i)
   {
@@ -26,7 +26,7 @@ void output(const int * const * t, size_t m, size_t n)
   }
 }
 
-int** createTable(size_t m, size_t n)
+int** nums(size_t m, size_t n)
 {
   int** t = new int*[m];
   size_t created = 0;
