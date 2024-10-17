@@ -2,8 +2,8 @@
 #include "matrix.hpp"
 int main()
 {
-  size_t M = 0, N = 0;
-  std::cin >> M >> N;
+  size_t m = 0, n = 0;
+  std::cin >> m >> n;
     if(!std::cin)
 {
     std::cerr << "ERR\n";
@@ -13,17 +13,16 @@ int main()
   int ** t = nullptr;
    try
   {
-    t = nums(M, N);
+    t = nums(m, n);
   }
   catch(const std::bad_alloc &e)
   {
     std::cerr << "Not enough memory\n";
     return 2;
   }
-  input (t, M, N);
-  out (t, M, N);
-  clear (t, M, N);
-  dest (t, M);
+  input (t, m, n);
+  out (t, m, n);
+  dest (t, m);
   return 0;
 }
 
